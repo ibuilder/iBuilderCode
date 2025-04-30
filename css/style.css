@@ -23,6 +23,14 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.jumbotron {
+    background-image: url('../img/blueprint-background.svg'); /* Path relative to css folder */
+    background-size: cover; /* Cover the entire jumbotron area */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent tiling if image is smaller */
+    /* Keep existing text color and padding, etc. */
+}
+
 /* Dark Theme Styles */
 body.dark-theme {
     background-color: var(--background-color-dark);
@@ -48,9 +56,10 @@ body.dark-theme .navbar-light .navbar-toggler-icon {
      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(205, 217, 229, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-
 body.dark-theme .jumbotron {
-    background-color: #1c2128 !important; /* Darker primary */
+    /* background-color: #1c2128 !important; */ /* Comment out or remove if image should be primary background */
+    /* Or use rgba for a blended effect: */
+    background-color: rgba(28, 33, 40, 0.8) !important; /* Darker primary with some transparency */
     color: var(--text-color-dark);
 }
 
@@ -74,7 +83,6 @@ body.dark-theme .form-control:focus {
      border-color: var(--link-color-dark);
      box-shadow: 0 0 0 0.2rem rgba(88, 166, 255, 0.25);
 }
-
 
 body.dark-theme footer {
     background-color: var(--footer-bg-dark) !important; /* Override Bootstrap */
