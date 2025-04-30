@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with slight gradient -->
+  <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#f8f9fa" />
+    <stop offset="100%" stop-color="#e9ecef" />
+  </linearGradient>
+  <rect width="800" height="450" fill="url(#bg-gradient)" rx="10" ry="10"/>
+  
+  <!-- Procore-style header -->
+  <rect width="800" height="60" fill="#ff5722" rx="10" ry="10"/>
+  <text x="40" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">Procore Invoice Generator</text>
+  
+  <!-- Tool Interface Preview -->
+  <rect x="40" y="80" width="720" height="340" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="5" ry="5"/>
+  
+  <!-- Form Elements -->
+  <rect x="60" y="100" width="340" height="40" fill="#f1f3f5" stroke="#ced4da" stroke-width="1" rx="4" ry="4"/>
+  <text x="70" y="125" font-family="Arial, sans-serif" font-size="14" fill="#495057">Project Name: Commercial Building 2024</text>
+  
+  <rect x="420" y="100" width="320" height="40" fill="#f1f3f5" stroke="#ced4da" stroke-width="1" rx="4" ry="4"/>
+  <text x="430" y="125" font-family="Arial, sans-serif" font-size="14" fill="#495057">Invoice #: INV-2025-0430</text>
+  
+  <!-- Invoice Items Table -->
+  <rect x="60" y="160" width="680" height="30" fill="#e9ecef" stroke="#dee2e6" stroke-width="1"/>
+  <text x="70" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Description</text>
+  <text x="440" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Quantity</text>
+  <text x="540" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Unit Price</text>
+  <text x="670" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Total</text>
+  
+  <!-- Row 1 -->
+  <rect x="60" y="190" width="680" height="30" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="70" y="210" font-family="Arial, sans-serif" font-size="13" fill="#212529">Foundation Work</text>
+  <text x="440" y="210" font-family="Arial, sans-serif" font-size="13" fill="#212529">1</text>
+  <text x="540" y="210" font-family="Arial, sans-serif" font-size="13" fill="#212529">$15,000.00</text>
+  <text x="670" y="210" font-family="Arial, sans-serif" font-size="13" fill="#212529">$15,000.00</text>
+  
+  <!-- Row 2 -->
+  <rect x="60" y="220" width="680" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="70" y="240" font-family="Arial, sans-serif" font-size="13" fill="#212529">Framing Labor</text>
+  <text x="440" y="240" font-family="Arial, sans-serif" font-size="13" fill="#212529">160</text>
+  <text x="540" y="240" font-family="Arial, sans-serif" font-size="13" fill="#212529">$75.00</text>
+  <text x="670" y="240" font-family="Arial, sans-serif" font-size="13" fill="#212529">$12,000.00</text>
+  
+  <!-- Row 3 -->
+  <rect x="60" y="250" width="680" height="30" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="70" y="270" font-family="Arial, sans-serif" font-size="13" fill="#212529">Lumber Materials</text>
+  <text x="440" y="270" font-family="Arial, sans-serif" font-size="13" fill="#212529">1</text>
+  <text x="540" y="270" font-family="Arial, sans-serif" font-size="13" fill="#212529">$8,750.00</text>
+  <text x="670" y="270" font-family="Arial, sans-serif" font-size="13" fill="#212529">$8,750.00</text>
+  
+  <!-- Total Section -->
+  <rect x="520" y="290" width="220" height="30" fill="#e9ecef" stroke="#dee2e6" stroke-width="1"/>
+  <text x="530" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">Total:</text>
+  <text x="670" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212529">$35,750.00</text>
+  
+  <!-- Action Buttons -->
+  <rect x="60" y="340" width="150" height="40" fill="#0d6efd" rx="4" ry="4"/>
+  <text x="105" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Generate PDF</text>
+  
+  <rect x="230" y="340" width="150" height="40" fill="#ff5722" rx="4" ry="4"/>
+  <text x="275" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Send to Procore</text>
+  
+  <rect x="400" y="340" width="150" height="40" fill="#6c757d" rx="4" ry="4"/>
+  <text x="445" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Save Draft</text>
+  
+  <!-- Procore Logo -->
+  <rect x="630" y="340" width="110" height="40" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="4" ry="4"/>
+  <text x="685" y="365" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff5722" text-anchor="middle">Procore API</text>
+</svg>

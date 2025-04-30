@@ -1,0 +1,134 @@
+/* Basic Theme Variables */
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #212529;
+    --navbar-bg-light: #f8f9fa;
+    --footer-bg-light: #f8f9fa;
+    --link-color-light: #007bff;
+    --card-bg-light: #ffffff;
+    --border-color-light: #dee2e6;
+
+    --background-color-dark: #22272e;
+    --text-color-dark: #cdd9e5;
+    --navbar-bg-dark: #2d333b;
+    --footer-bg-dark: #2d333b;
+    --link-color-dark: #58a6ff;
+    --card-bg-dark: #2d333b;
+    --border-color-dark: #444c56;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .navbar {
+    background-color: var(--navbar-bg-dark) !important; /* Override Bootstrap */
+    border-bottom: 1px solid var(--border-color-dark);
+}
+
+body.dark-theme .navbar-light .navbar-brand,
+body.dark-theme .navbar-light .nav-link {
+    color: var(--text-color-dark);
+}
+body.dark-theme .navbar-light .nav-link:hover {
+    color: var(--link-color-dark);
+}
+body.dark-theme .navbar-light .navbar-toggler {
+     border-color: var(--border-color-dark);
+}
+body.dark-theme .navbar-light .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(205, 217, 229, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+body.dark-theme .jumbotron {
+    background-color: #1c2128 !important; /* Darker primary */
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .list-group-item {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .form-control {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    border-color: var(--border-color-dark);
+}
+body.dark-theme .form-control::placeholder {
+    color: #6e7681;
+}
+body.dark-theme .form-control:focus {
+     background-color: var(--background-color-dark);
+     color: var(--text-color-dark);
+     border-color: var(--link-color-dark);
+     box-shadow: 0 0 0 0.2rem rgba(88, 166, 255, 0.25);
+}
+
+
+body.dark-theme footer {
+    background-color: var(--footer-bg-dark) !important; /* Override Bootstrap */
+    color: var(--text-color-dark);
+    border-top: 1px solid var(--border-color-dark);
+}
+
+body.dark-theme a {
+    /* Use the light theme link color in dark mode for general links */
+    color: var(--link-color-light);
+}
+body.dark-theme a:hover {
+    /* Use a standard hover color suitable for the light theme link color */
+    color: #0056b3;
+}
+body.dark-theme .btn-link {
+     /* Use the dark theme text color (white/light grey) for button links */
+     color: var(--text-color-dark); /* Changed from --link-color-light */
+}
+body.dark-theme .btn-link:hover {
+    /* Adjust hover for white text - perhaps slightly brighter or default underline */
+    color: #ffffff; /* Changed from #0056b3 */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+body.dark-theme .btn-outline-secondary {
+    color: var(--text-color-dark);
+    border-color: var(--border-color-dark);
+}
+body.dark-theme .btn-outline-secondary:hover {
+    background-color: var(--border-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .faq-item {
+    border-bottom: 1px solid var(--border-color-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 10px; /* Add some space below toggler */
+    }
+    #theme-toggle {
+        margin-top: 10px; /* Space toggle button in collapsed menu */
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+    .list-group-item .btn {
+        margin-top: 5px; /* Stack buttons on small screens */
+    }
+}

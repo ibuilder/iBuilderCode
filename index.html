@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="iBuilder Code: Your go-to resource for innovative coding tools, documentation, and demos by Matt Emma. Explore Procore API tools, IFC models, and more.">
+        <meta name="keywords" content="iBuilder Code, Matt Emma, Procore API, IFC, PMxl, RExl, coding tools, software development, construction tech">
+        <meta name="author" content="Matt Emma">
+    
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ibuildercode.com/"> <!-- Replace with actual deployed URL -->
+        <meta property="og:title" content="iBuilder Code - Tools & Documentation">
+        <meta property="og:description" content="Innovative coding tools, documentation, and demos by Matt Emma.">
+        <meta property="og:image" content="img/og-image.svg"> <!-- Updated path, ensure full URL on deployment -->
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://ibuildercode.com/"> <!-- Replace with actual deployed URL -->
+        <meta property="twitter:title" content="iBuilder Code - Tools & Documentation">
+        <meta property="twitter:description" content="Innovative coding tools, documentation, and demos by Matt Emma.">
+        <meta property="twitter:image" content="img/og-image.svg"> <!-- Updated path (using OG image), ensure full URL on deployment -->
+
+        <title>iBuilder Code</title>
+
+        <!-- Favicon Links - Updated paths based on img folder -->
+        <link rel="icon" href="img/favicon-ico.ico" sizes="any">
+        <link rel="icon" href="img/logo.svg" type="image/svg+xml"> <!-- Using logo.svg as SVG icon -->
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.svg"> <!-- Using apple-touch-icon.svg -->
+        <!-- <link rel="manifest" href="/site.webmanifest"> Optional: Create manifest file if needed, reference pwa icons -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <!-- Add class="dark-theme" here if dark theme is preferred by default or loaded from localStorage -->
+    <header>
+        <!-- Consistent Navbar Structure -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" alt="iBuilder Code Logo" width="30" height="30" class="d-inline-block align-top">
+                iBuilder Code
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+                <button id="theme-toggle" class="btn btn-outline-secondary btn-sm">Toggle Theme</button>
+            </div>
+        </nav>
+        <!-- Jumbotron moved below navbar -->
+        <div class="jumbotron text-center bg-primary text-white rounded-0">
+             <h1>Welcome to iBuilder Code</h1>
+             <p>Your go-to resource for innovative coding tools and documentation.</p>
+             <a href="https://github.com/ibuilder" class="btn btn-light" target="_blank" rel="noopener noreferrer">Visit our GitHub</a>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <h2>Tools & Demonstrations</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">
+                <h5>PrcoreAPI Invoice</h5>
+                <img src="img/procore-invoice-preview.svg" alt="Procore Invoice Tool Preview" class="img-fluid mb-2" style="max-height: 150px;"> <!-- Updated src and uncommented -->
+                <p>A PHP tool to interact with the Procore API for invoice management.</p>
+                <a href="https://github.com/ibuilder/ProcoreAPI-PHPInvoice" class="btn btn-info btn-sm" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://ibuildercode.com/invoice/" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">Demo</a>
+            </li>
+            <li class="list-group-item">
+                <h5>NYC Brownstone IFC</h5>
+                 <img src="img/nyc-brownstone-preview.svg" alt="NYC Brownstone IFC Preview" class="img-fluid mb-2" style="max-height: 150px;"> <!-- Updated src and uncommented -->
+                 <p>An Industry Foundation Classes (IFC) model example of a typical NYC Brownstone.</p>
+                <a href="https://github.com/ibuilder/NYC-BrownstoneIFC" class="btn btn-info btn-sm" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://ibuilder.github.io/NYC-BrownstoneIFC/" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">Demo</a>
+            </li>
+            <li class="list-group-item">
+                <h5>PMxl</h5>
+                <img src="img/pmxl-preview.svg" alt="PMxl Tool Preview" class="img-fluid mb-2" style="max-height: 150px;"> <!-- Added img tag -->
+                <p>Description for PMxl tool goes here.</p> <!-- Added description -->
+                <a href="https://github.com/ibuilder/PMxl" class="btn btn-info btn-sm" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://ibuilder.github.io/PMxl/" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">Demo</a>
+            </li>
+            <li class="list-group-item">
+                <h5>RExl</h5>
+                <img src="img/rexl-preview.svg" alt="RExl Tool Preview" class="img-fluid mb-2" style="max-height: 150px;"> <!-- Added img tag -->
+                <p>Description for RExl tool goes here.</p> <!-- Added description -->
+                <a href="https://github.com/ibuilder/RExl" class="btn btn-info btn-sm" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://ibuilder.github.io/RExl/" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">Demo</a>
+            </li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <!-- Note: Replace mailto: with a proper form handling service (e.g., Formspree, Netlify Forms) or a backend endpoint -->
+        <form id="contact-form" action="https://formspree.io/f/xrbqeobq" method="POST">
+             <div id="form-error-message" class="alert alert-danger d-none" role="alert">
+                 Please fill out all fields.
+             </div>
+             <div id="form-success-message" class="alert alert-success d-none" role="alert">
+                 Thank you for your message! We'll get back to you soon.
+             </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+
+    <footer class="text-center mt-5 py-3 bg-light">
+        <p>&copy; <span id="current-year">2023</span> iBuilder Code. All rights reserved.</p>
+        <p>
+            <a href="https://2build.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a> |
+            <a href="https://www.linkedin.com/in/memma/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://bsky.app/profile/ibuilder.bsky.social" target="_blank" rel="noopener noreferrer">BlueSky</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
